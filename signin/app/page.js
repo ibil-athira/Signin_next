@@ -29,8 +29,8 @@ export default function Home() {
               </div>
               <div className={styles["button-container"]}>
                 <button type="button"className={styles["btn-signin"]}
-                  onClick={handleRedirect} // Redirect on button click
-                >
+                  onClick={handleRedirect} //redirects
+                  >
                   SIGN IN
                 </button>
               </div>
@@ -46,8 +46,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Background Content */}
+      {/*left side Content */}
       <div className={styles["background-container"]}>
         <div className={styles["background-content"]}>
           <Image src="/chat.png" alt="Chat Illustration" width={500} height={500} priority/>
