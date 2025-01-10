@@ -7,7 +7,7 @@ export default function Home() {
   const router = useRouter(); // Initialize the router
 
   const handleRedirect = () => {
-    router.push("/"); // Redirects to the current page ("/")
+    router.push("/"); // Redirects
   };
 
   return (
