@@ -1,0 +1,193 @@
+/*page.module.css*/
+
+.container {
+  gap: 20px;
+  display: flex;
+  height: 97vh;
+  margin-left: 39vh;
+  margin-right: 3vh;
+  margin-top: 1.5vh;
+}
+
+.login-container {
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: -70px;
+}
+
+.card-header {
+  text-align: left;
+}
+
+.card-header h4 {
+  font-weight: bold;
+  color: #072a52db;
+  font-size: 28px;
+}
+
+.card-header p {
+  margin: 0;
+  color: gray;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.card-body {
+  padding: 0px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+  width: 100%; /* Ensure full width for alignment */
+}
+
+.input {
+  width: 100%;
+  padding: 13px;
+  font-size: 14px;
+  border: 1px solid #cccccc95;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+  max-width: 300px; /* Restrict maximum width */
+}
+
+.input:focus {
+  border-color: #6ca8ed; /* Change the border color to your desired color */
+  outline: none; /* Remove the default outline */
+}
+
+.button-container {
+  width: 100%; /* Match input box width */
+  margin: 0; /* Remove any additional margins */
+}
+
+.btn-signin {
+  background-color: #1F60AB;
+  border: none;
+  color: white;
+  padding: 13px;
+  font-size: 12px; /* Larger font size like h2 */
+  font-weight: bold; /* Make the text bold like h2 */
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%; /* Match input box width */
+  box-sizing: border-box; /* Align padding with container */
+  max-width: 300px; /* Restrict maximum width */
+  text-align: center; /* Center the text */
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.btn-signin:hover{
+  color: #6ca8ed;
+  background-color: #07458c;
+}
+
+
+.signup-link {
+  color: #1F60AB;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.background-container {
+  background: linear-gradient(to top left, #29B1E7, #1F60AB);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px; /* Larger radius for more rounded corners */
+  border-top-left-radius: 10px; /* Larger radius for more rounded corners */
+  border-bottom-left-radius: 10px; /* Larger radius for more rounded corners */
+  border-bottom-right-radius: 10px; /* Larger radius for more rounded corners */
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.background-content {
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.background-content h5 {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.background-content p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.card-footer{
+  padding-left: 40px;
+}
+/* For smaller screens (tablets and below) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the login form and background content */
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .login-container,
+  .background-container {
+    width: 100%; /* Make both sections take full width */
+    padding: 20px; /* Add some spacing */
+  }
+  .login-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Make the login container take full height */
+  }
+  .card {
+    margin: 0 auto; /* Center the card */
+    max-width: 90%; /* Reduce card width */
+  }
+
+  .background-container {
+    border-radius: 0; /* Remove rounded corners */
+  }
+
+  .background-content img {
+    max-width: 80%; /* Reduce image size */
+  }
+}
+
+/* For very small screens (mobile devices) */
+@media screen and (max-width: 480px) {
+  .card-header h2 {
+    font-size: 20px; /* Adjust font size for headings */
+  }
+
+  .card-header p,
+  .span,
+  .background-content p {
+    font-size: 14px; /* Reduce font size for smaller devices */
+  }
+
+  .input {
+    font-size: 12px;
+    padding: 10px; /* Adjust padding */
+  }
+
+  .btn-signin {
+    font-size: 14px; /* Make button text smaller */
+    padding: 10px 20px; /* Adjust padding */
+  }
+
+  .background-content {
+    padding: 20px; /* Reduce padding */
+  }
+}
