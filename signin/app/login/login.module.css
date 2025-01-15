@@ -1,0 +1,33 @@
+/* Global container for the entire page */
+.container {
+    display: flex;
+    height: 97vh;
+    margin-top: 1.5vh;
+  }
+  
+  /* Left container with blue background */
+  .left-container {
+    width: 50%;
+    background: linear-gradient(to top left, #29B1E7, #1F60AB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Right container with white background */
+  .right-container {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Optional adjustments for any content inside the right side */
+  .right-container .content {
+    text-align: center;
+  }
+  

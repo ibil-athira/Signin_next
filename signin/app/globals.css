@@ -4,6 +4,8 @@ body {
   padding: 0;
   font-family: 'Times New Roman', serif;
   height: 100%;
+  overflow: scroll;
+
 }
 
 img {
